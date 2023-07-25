@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
 import { Routes } from './routes'
 import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react'
 import LogoFafa from './assets/logoFafa.png'
@@ -15,8 +15,8 @@ export function App() {
                 className="w-48 h-48"
               />
               <div className="flex justify-around items-center w-48  mb-4">
-                <a href="/">Bolsas</a>
-                <a href="/contato">Contato</a>
+                <Link to="/">Bolsas</Link>
+                <Link to="/contato">Contato</Link>
               </div>
             </div>
             <Routes />
