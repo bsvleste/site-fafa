@@ -1,6 +1,6 @@
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
   max-height: 100vh;
 }
 
-.number-slide1 {
+/* .number-slide1 {
   background: rgb(64, 175, 255);
   background: linear-gradient(
     128deg,
@@ -68,7 +68,7 @@
     rgba(64, 76, 255, 1) 0%,
     rgba(174, 63, 255, 1) 100%
   );
-}
+} */
 
 .navigation-wrapper {
   position: relative;
