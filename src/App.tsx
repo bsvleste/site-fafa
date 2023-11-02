@@ -34,10 +34,9 @@ export function App() {
     }
     fetchBolsas()
   }, [])
-  console.log(currentSlide)
-  console.log(loaded)
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
+    loop: true,
     breakpoints: {
       '(max-width:640px)': {
         slides: {
@@ -55,7 +54,6 @@ export function App() {
       setLoaded(true)
     },
   })
-  console.log(instanceRef)
   return (
     <div className="flex flex-col items-start justify-center  min-h-screen ">
       <header className="py-8 w-full max-w-[1180px] center">
