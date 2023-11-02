@@ -10,8 +10,6 @@ type GalleyProps = {
   price: string
 }
 export function App() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [loaded, setLoaded] = useState(false)
   const [data, setData] = useState<GalleyProps[]>([])
   useEffect(() => {
     const fetchBolsas = async () => {
@@ -34,7 +32,7 @@ export function App() {
     }
     fetchBolsas()
   }, [])
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [sliderRef] = useKeenSlider({
     initial: 0,
     loop: true,
     breakpoints: {
@@ -46,12 +44,6 @@ export function App() {
     },
     slides: {
       perView: 3,
-    },
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel)
-    },
-    created() {
-      setLoaded(true)
     },
   })
   return (
