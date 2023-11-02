@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   mode: 'jit',
-  content: ["./src/**/*.tsx"],
+  content: ['./src/**/*.tsx'],
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
+    extend: {
+      maxWidth: {
+        template: 'calc(100vw - ((100vw - 1180px)) / 2)',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
-
