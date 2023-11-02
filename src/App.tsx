@@ -1,13 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
-import { Routes } from './routes'
-import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react'
 import LogoFafa from './assets/logoFafa.png'
-import { Slides } from './pages/Slides'
 import { stripe } from './lib/stripe'
 import Stripe from 'stripe'
 import { useKeenSlider } from 'keen-slider/react'
-import img from './assets/img1.png'
 type GalleyProps = {
   id: string
   name: string
